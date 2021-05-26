@@ -37,6 +37,10 @@ public class Main {
     public static void fileMenu(Scanner scanner) throws IOException {
         String path= "OODPE_PKG/files.txt";
         FileDetails root= readFileDetails(path);
+
+        FileCountVisitor fileCountVisitor = new FileCountVisitor();
+        ShortPrintVisitor shortPrintVisitor = new ShortPrintVisitor();
+
         System.out.println("Choose from the following options:\n" +
                 "q: quit\n" +
                 "c: countFiles\n" +
@@ -47,8 +51,8 @@ public class Main {
         while (!(myString = scanner.nextLine()).equals("q")){
             switch (myString){
                 case "c":
-                    root.accept();
-                    //TODO: Add counting behavior
+                    root.accept(fileCountVisitor);
+                    //DONE: Add counting behavior
                     break;
                 case "sz":
                     //TODO: Add size calculation behavior
@@ -57,7 +61,8 @@ public class Main {
                     //TODO: Add statistics behavior
                     break;
                 case "sh":
-                    //TODO: Add short representation behavior
+                    root.accept(shortPrintVisitor);
+                    //DONE: Add short representation behavior
             }
         }
     }
