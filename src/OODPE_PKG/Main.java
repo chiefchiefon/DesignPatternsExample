@@ -40,6 +40,7 @@ public class Main {
 
         FileCountVisitor fileCountVisitor = new FileCountVisitor();
         ShortPrintVisitor shortPrintVisitor = new ShortPrintVisitor();
+        SizeCalculationVisitor sizeCalculationVisitor = new SizeCalculationVisitor();
 
         System.out.println("Choose from the following options:\n" +
                 "q: quit\n" +
@@ -52,10 +53,13 @@ public class Main {
             switch (myString){
                 case "c":
                     root.accept(fileCountVisitor);
+                    fileCountVisitor.getFilesCounter();
                     //DONE: Add counting behavior
                     break;
                 case "sz":
-                    //TODO: Add size calculation behavior
+                    root.accept(sizeCalculationVisitor);
+                    System.out.println(sizeCalculationVisitor.getSize());
+                    //DONE: Add size calculation behavior
                     break;
                 case "st":
                     //TODO: Add statistics behavior

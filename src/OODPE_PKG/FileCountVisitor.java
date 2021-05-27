@@ -2,6 +2,7 @@ package OODPE_PKG;
 
 public class FileCountVisitor implements FileDetailsVisitor{
     private int filesCounter = 0;
+    public int getFilesCounter() { return this.filesCounter; }
 
     @Override
     public void visit(DocxFileDetails docxFileDetails) { this.filesCounter++; }
