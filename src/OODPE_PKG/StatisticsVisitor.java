@@ -6,9 +6,9 @@ public class StatisticsVisitor implements FileDetailsVisitor {
 
     @Override
     public void visit(DocxFileDetails docxFileDetails) {
-        System.out.printf("The file " + docxFileDetails.getName()
-                + " has an average of " + 1.0 * docxFileDetails.getWords() / docxFileDetails.getPages()
-                +  " words per page.");
+        System.out.printf("The file %s has an average of %.6f words per page.\n",
+                docxFileDetails.getName(),
+                1.0 * docxFileDetails.getWords() / docxFileDetails.getPages());
 //        this.fileStatisticsString = String.format("%s words: %s, %d bytes",
 //                docxFileDetails.getName(),
 //                docxFileDetails.getWords(),
@@ -22,10 +22,9 @@ public class StatisticsVisitor implements FileDetailsVisitor {
 //                jpgFileDetails.getWidth(),
 //                jpgFileDetails.getHeight(),
 //                jpgFileDetails.getSize());
-        System.out.println("The picture " + jpgFileDetails.getName()
-                + " has an average of " +
-                1.0 * jpgFileDetails.getSize() / (jpgFileDetails.getHeight() * jpgFileDetails.getWidth())
-                + " bytes per pixel.");
+        System.out.printf("The picture %s has an average of %.6f bytes per pixel.\n",
+                jpgFileDetails.getName(),
+                1.0 * jpgFileDetails.getSize() / (jpgFileDetails.getHeight() * jpgFileDetails.getWidth()));
     }
 
     @Override
@@ -33,8 +32,9 @@ public class StatisticsVisitor implements FileDetailsVisitor {
 //        this.fileStatisticsString =
 //                "The bitrate of " + mp3FileDetails.getName()
 //                + " is " + mp3FileDetails.getSize() / mp3FileDetails.getLengthSec() + ".";
-        System.out.println("The bitrate of " + mp3FileDetails.getName()
-                + " is " + 1.0 * mp3FileDetails.getSize() / mp3FileDetails.getLengthSec() + ".");
+        System.out.printf("The bitrate of %s is %.6f.\n",
+                mp3FileDetails.getName(),
+                1.0 * mp3FileDetails.getSize() / mp3FileDetails.getLengthSec());
 //        this.fileStatisticsString = String.format("%s length in seconds: %d, %d bytes",
 //                mp3FileDetails.getName(),
 //                mp3FileDetails.getLengthSec(),
@@ -47,8 +47,9 @@ public class StatisticsVisitor implements FileDetailsVisitor {
 //                pptxFileDetails.getName(),
 //                pptxFileDetails.getSlides(),
 //                pptxFileDetails.getSize());
-        System.out.println("The average slide size in Presentation " + pptxFileDetails.getName()
-                +" is " + 1.0 * pptxFileDetails.getSize() / pptxFileDetails.getSlides());
+        System.out.printf("The average slide size in Presentation %s is %.06f\n",
+                pptxFileDetails.getName(),
+                1.0 * pptxFileDetails.getSize() / pptxFileDetails.getSlides());
     }
 
     @Override
