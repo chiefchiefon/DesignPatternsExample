@@ -19,6 +19,6 @@ public class Mp3FileDetails extends FileDetails {
 
     @Override
     public void accept(FileDetailsVisitor fileDetailsVisitor) {
-
+        fileDetailsVisitor.visit(this);
     }
 }

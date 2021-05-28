@@ -20,5 +20,8 @@ public class FileCountVisitor implements FileDetailsVisitor{
     public void visit(TxtFileDetails txtFileDetails) { this.filesCounter++; }
 
     @Override
+    public void visit(HtmlFileDetails htmlFileDetails) { this.filesCounter++; }
+
+    @Override
     public void visit(DirectoryDetails directoryDetails) { }
 }

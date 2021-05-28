@@ -15,5 +15,6 @@ public interface FileDetailsVisitor {
     public void visit(Mp3FileDetails mp3FileDetails);
     public void visit(PptxFileDetails pptxFileDetails);
     public void visit(TxtFileDetails txtFileDetails);
+    public void visit(HtmlFileDetails htmlFileDetails);
     public void visit(DirectoryDetails directoryDetails);
 }

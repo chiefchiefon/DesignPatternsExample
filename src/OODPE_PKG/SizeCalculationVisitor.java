@@ -20,6 +20,9 @@ public class SizeCalculationVisitor implements FileDetailsVisitor {
     public void visit(TxtFileDetails txtFileDetails) { this.size += txtFileDetails.getSize(); }
 
     @Override
+    public void visit(HtmlFileDetails htmlFileDetails) { this.size += htmlFileDetails.getSize(); }
+
+    @Override
     public void visit(DirectoryDetails directoryDetails) {
         if (directoryDetails.itsFiles != null) {
             size += directoryDetails.itsFiles.size();

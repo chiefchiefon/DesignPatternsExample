@@ -24,6 +24,6 @@ public class DocxFileDetails extends FileDetails {
 
     @Override
     public void accept(FileDetailsVisitor fileDetailsVisitor) {
-
+        fileDetailsVisitor.visit(this);
     }
 }
