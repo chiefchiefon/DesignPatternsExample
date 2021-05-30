@@ -80,7 +80,7 @@ public class Main {
                 "la: lamb\n" +
                 "hm: homemade");
         // TODO: Add a Hamburger Factory and use it to create a Hamburger
-        Hamburger hamburger = null;
+        Hamburger hamburger = HamburgerFactory.createHamburger(scanner.nextLine());
 
         String choice="";
         while (!choice.equals("s")) {
@@ -106,6 +106,7 @@ public class Main {
                 "sa: salad\n" +
                 "fe: friedEgg");
         // TODO: Add a Hamburger-Topping Factory and use it to create a decorated Hamburger
-        return null;
+
+        return ToppingFactory.topHamburger(scanner.nextLine(), hamburger);
     }
 }

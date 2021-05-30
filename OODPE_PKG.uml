@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>OODPE_PKG</OriginalElement>
+  <nodes>
+    <node x="0.0" y="504.0">OODPE_PKG.FileCountVisitor</node>
+    <node x="0.0" y="341.0">OODPE_PKG.JpgFileDetails</node>
+    <node x="555.5" y="84.0">OODPE_PKG.HomemadeHamburger</node>
+    <node x="628.0" y="341.0">OODPE_PKG.TxtFileDetails</node>
+    <node x="0.0" y="168.0">OODPE_PKG.FriedEggDecorator</node>
+    <node x="345.5" y="420.0">OODPE_PKG.FileDetailsVisitor</node>
+    <node x="425.0" y="341.0">OODPE_PKG.Mp3FileDetails</node>
+    <node x="806.5" y="0.0">OODPE_PKG.Hamburger</node>
+    <node x="734.0" y="504.0">OODPE_PKG.StatisticsVisitor</node>
+    <node x="434.99999999999994" y="168.0">OODPE_PKG.ChipsDecorator</node>
+    <node x="1183.5" y="84.0">OODPE_PKG.ClassicHamburger</node>
+    <node x="247.0" y="583.0">OODPE_PKG.ToppingFactory</node>
+    <node x="203.0" y="341.0">OODPE_PKG.DirectoryDetails</node>
+    <node x="655.0" y="583.0">OODPE_PKG.Main</node>
+    <node x="787.5" y="84.0">OODPE_PKG.LambHamburger</node>
+    <node x="0.0" y="583.0">OODPE_PKG.HamburgerFactory</node>
+    <node x="454.0" y="504.0">OODPE_PKG.SizeCalculationVisitor</node>
+    <node x="1043.0" y="341.0">OODPE_PKG.HtmlFileDetails</node>
+    <node x="831.0" y="341.0">OODPE_PKG.PptxFileDetails</node>
+    <node x="980.5" y="84.0">OODPE_PKG.SpicyHamburger</node>
+    <node x="475.0" y="583.0">OODPE_PKG.ClassName</node>
+    <node x="231.99999999999994" y="168.0">OODPE_PKG.SaladDecorator</node>
+    <node x="991.0" y="420.0">OODPE_PKG.FileDetailsFactory</node>
+    <node x="222.0" y="504.0">OODPE_PKG.ShortPrintVisitor</node>
+    <node x="314.49999999999994" y="84.0">OODPE_PKG.HamburgerDecorator</node>
+    <node x="642.5" y="247.0">OODPE_PKG.FileDetails</node>
+    <node x="638.0" y="168.0">OODPE_PKG.OnionRingsDecorator</node>
+    <node x="1255.0" y="341.0">OODPE_PKG.DocxFileDetails</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="OODPE_PKG.SizeCalculationVisitor" target="OODPE_PKG.FileDetailsVisitor">
+      <point x="0.0" y="-17.0" />
+      <point x="584.0" y="484.0" />
+      <point x="483.625" y="484.0" />
+      <point x="27.625" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.JpgFileDetails" target="OODPE_PKG.FileDetails">
+      <point x="0.0" y="-17.0" />
+      <point x="91.5" y="301.0" />
+      <point x="653.5" y="301.0" />
+      <point x="-66.0" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.TxtFileDetails" target="OODPE_PKG.FileDetails">
+      <point x="0.0" y="-17.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.ChipsDecorator" target="OODPE_PKG.HamburgerDecorator">
+      <point x="0.0" y="-17.0" />
+      <point x="526.5" y="148.0" />
+      <point x="452.62499999999994" y="148.0" />
+      <point x="27.625" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.PptxFileDetails" target="OODPE_PKG.FileDetails">
+      <point x="0.0" y="-17.0" />
+      <point x="927.0" y="321.0" />
+      <point x="741.5" y="321.0" />
+      <point x="22.0" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.StatisticsVisitor" target="OODPE_PKG.FileDetailsVisitor">
+      <point x="0.0" y="-17.0" />
+      <point x="840.0" y="474.0" />
+      <point x="538.875" y="474.0" />
+      <point x="82.875" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.DirectoryDetails" target="OODPE_PKG.FileDetails">
+      <point x="0.0" y="-17.0" />
+      <point x="304.0" y="311.0" />
+      <point x="675.5" y="311.0" />
+      <point x="-44.0" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.FriedEggDecorator" target="OODPE_PKG.HamburgerDecorator">
+      <point x="0.0" y="-17.0" />
+      <point x="106.0" y="138.0" />
+      <point x="342.12499999999994" y="138.0" />
+      <point x="-82.875" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.HamburgerDecorator" target="OODPE_PKG.Hamburger">
+      <point x="-5.6843418860808015E-14" y="-17.0" />
+      <point x="424.9999999999999" y="54.0" />
+      <point x="820.0" y="54.0" />
+      <point x="-54.0" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.OnionRingsDecorator" target="OODPE_PKG.HamburgerDecorator">
+      <point x="0.0" y="-17.0" />
+      <point x="753.5" y="138.0" />
+      <point x="507.8749999999999" y="138.0" />
+      <point x="82.87499999999994" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.ClassicHamburger" target="OODPE_PKG.Hamburger">
+      <point x="0.0" y="-17.0" />
+      <point x="1284.5" y="54.0" />
+      <point x="928.0" y="54.0" />
+      <point x="54.0" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.FileCountVisitor" target="OODPE_PKG.FileDetailsVisitor">
+      <point x="0.0" y="-17.0" />
+      <point x="101.0" y="474.0" />
+      <point x="373.125" y="474.0" />
+      <point x="-82.875" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.ShortPrintVisitor" target="OODPE_PKG.FileDetailsVisitor">
+      <point x="0.0" y="-17.0" />
+      <point x="328.0" y="484.0" />
+      <point x="428.375" y="484.0" />
+      <point x="-27.625" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.LambHamburger" target="OODPE_PKG.Hamburger">
+      <point x="0.0" y="-17.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.SpicyHamburger" target="OODPE_PKG.Hamburger">
+      <point x="0.0" y="-17.0" />
+      <point x="1072.0" y="64.0" />
+      <point x="901.0" y="64.0" />
+      <point x="27.0" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.HomemadeHamburger" target="OODPE_PKG.Hamburger">
+      <point x="0.0" y="-17.0" />
+      <point x="661.5" y="64.0" />
+      <point x="847.0" y="64.0" />
+      <point x="-27.0" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.SaladDecorator" target="OODPE_PKG.HamburgerDecorator">
+      <point x="0.0" y="-17.0" />
+      <point x="323.49999999999994" y="148.0" />
+      <point x="397.37499999999994" y="148.0" />
+      <point x="-27.625" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.Mp3FileDetails" target="OODPE_PKG.FileDetails">
+      <point x="0.0" y="-17.0" />
+      <point x="516.5" y="321.0" />
+      <point x="697.5" y="321.0" />
+      <point x="-22.0" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.HtmlFileDetails" target="OODPE_PKG.FileDetails">
+      <point x="0.0" y="-17.0" />
+      <point x="1139.0" y="311.0" />
+      <point x="763.5" y="311.0" />
+      <point x="44.0" y="17.0" />
+    </edge>
+    <edge source="OODPE_PKG.DocxFileDetails" target="OODPE_PKG.FileDetails">
+      <point x="0.0" y="-17.0" />
+      <point x="1351.0" y="301.0" />
+      <point x="785.5" y="301.0" />
+      <point x="66.0" y="17.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7573278800272665" x="713.5" y="309.0049504950495" />
+  <SelectedNodes>
+    <node>OODPE_PKG.JpgFileDetails</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

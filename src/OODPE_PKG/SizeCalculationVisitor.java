@@ -24,8 +24,8 @@ public class SizeCalculationVisitor implements FileDetailsVisitor {
 
     @Override
     public void visit(DirectoryDetails directoryDetails) {
-        if (directoryDetails.itsFiles != null) {
-            size += directoryDetails.itsFiles.size();
-        }
+//        if (directoryDetails.itsFiles != null) {
+//            size += directoryDetails.itsFiles.size();
+//        }
     }
 }
